@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0">
+        <title>Blockfall Survivor</title>
+        <link rel="stylesheet" type="text/css" href="./game.css">
+    </head>
+    <body>
+        
+        <h1>Welcome to the world of Blockfall Survivor</h1>
+        <hr>
+        <div id="score" class = "s-l-h">Score: 0</div>
+        <div id="life" class = "s-l-h">Bonus-Life: 0</div>
+        <div id="highScore" class = "s-l-h">Highest-Score:</div>
+        <div id="highScorer" class = "s-l-h">Highest-Scorer:</div>
+        <hr>
+        <div id="canvasDiv">
+        <div id="blockfall" class="game-name"><h2>Blockfall</h2></div>
+        <svg id = "gameSVG" width = 400 height = 300></svg>
+        <div id="survivor"class="game-name"><h2>Survivor</h2></div>
+        </div>
+        <div class="button">
+            <button id = "play-button">Play</button>
+        </div>
+        <p id="help-line">Click the play button to Start the game! Use left and right key to move.</p>
+        <div id="playerNameInput" style="display: none;">
+            <label for="nameInput">Enter your name:</label>
+            <input type="text" id="nameInput">
+            <button id="nameSubmitButton">Submit</button>
+        </div>
+        <div id="playerList">
+            <h2>Player :</h2>
+            <ul>
+                {% for player in players %}
+                <li>{{ player.name }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <script type="text/javascript" src="game.js"></script>
+        
+    </body>
+</html>

@@ -1,0 +1,105 @@
+
+body {
+    background-color: rgb(22, 6, 1);
+}
+svg {
+    border: 5px solid rgb(219, 205, 8);
+    background-color: rgb(232, 244, 232);
+
+}
+#canvasDiv{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(62, 107, 80);
+    
+}
+h1 {
+    text-align: center;
+    color: rgb(176, 99, 5);
+}
+p {
+    text-align: center;
+    color: rgb(7, 124, 128); 
+}
+
+.button {
+    display:flex;
+    justify-content: center;
+}
+.s-l-h{
+    font-size: larger;
+    font-weight: bold;
+    color:white;
+    text-align: center;
+}
+#highScorer {
+    color: gold;
+}
+
+#play-button {
+    width: 80px;
+    height: 50px;
+    margin-top:40px;
+    color: rgb(13, 14, 13);
+    background-color: rgb(230, 164, 84);
+    border-radius: 5px;
+    font-size: larger;
+    font-weight: bolder;
+}
+#play-button:hover,
+#play-button:active {
+    cursor: pointer; 
+    width: 80px;
+    height: 50px;
+    margin-top:40px;
+    color: Green;
+    background-color: rgb(182, 115, 34);
+    border-radius: 5px;
+}
+.game-name{
+    display:inline-block;
+    color: rgb(161, 165, 71);
+}
+#blockfall {
+    margin-right:30px;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(251, 251, 250);
+}
+#survivor {
+    margin-left:30px;
+    font-size: larger;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(251, 251, 250);
+}
+
+#playerNameInput {
+    display:flex;
+    font-size: larger;
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center;
+
+}
+
+#playerList {
+    display:flex;
+    font-size: larger;
+    color: whitesmoke;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+    text-align: center; 
+}
+.now-playing::after {
+    content: " (Now Playing)";
+    color: green;
+    font-weight: bold;
+}
